@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/frontend/" />
+  <Folder Name="/gateway/" />
+  <Folder Name="/services/">
+    <Project Path="IdentityService/IdentityService.csproj" Id="216a9db6-95a8-4bd8-8217-a6e917dc289d" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="docker-compose.yml" />
+  </Folder>
+</Solution>
