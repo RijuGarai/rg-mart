@@ -26,7 +26,7 @@ namespace IdentityService.Services
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddHours(int.Parse(_config["Jwt:ExpiryMinutes"]!)),
+                expires: DateTime.UtcNow.AddMinutes(int.Parse(_config["Jwt:ExpiryMinutes"]!)),
                 signingCredentials: creds
             );
             return new JwtSecurityTokenHandler().WriteToken(token);
